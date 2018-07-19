@@ -23,32 +23,32 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ## APP OK DIALOG
 
-// USAGE :
-//  first in main.js :
-//      import AppOkDialog from './components/AppOkDialog'
-//      Vue.component('app-okdialog', AppOkDialog)
+USAGE :
+ first in main.js :
+     import AppOkDialog from './components/AppOkDialog'
+     Vue.component('app-okdialog', AppOkDialog)
 //
-//  in Parent Component (caller) :
+ in Parent Component (caller) :
 
-// <script>
-// export default {
-//   data: () => ({
-//     dialogIsVisible: false
-//   }),
-//   methods: {
-//     closeDialog () {
-//       this.dialogIsVisible = false
-//       // other code
-//     },
-//     showDialog () {
-//       this.dialogIsVisible = true
-//     }
-//   }
-// }
-// </script>
-//  <app-okdialog
-//    v-model="dialogIsVisible" 
-//    :dialogVisible="dialogIsVisible"
-//    @close="closeDialog">
-//  </app-okdialog>
-// SOURCE : https://stackoverflow.com/questions/44446559/vuetify-programmatically-showing-dialog?rq=1
+<script>
+export default {
+  data: () => ({
+    dialogIsVisible: false
+  }),
+  methods: {
+    closeDialog () {
+      this.dialogIsVisible = false
+      other code
+    },
+    showDialog () {
+      this.dialogIsVisible = true
+    }
+  }
+}
+</script>
+ <app-okdialog
+   v-model="dialogIsVisible" 
+   :dialogVisible="dialogIsVisible"
+   @close="closeDialog">
+ </app-okdialog>
+SOURCE : https://stackoverflow.com/questions/44446559/vuetify-programmatically-showing-dialog?rq=1
