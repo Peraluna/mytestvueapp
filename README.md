@@ -51,4 +51,5 @@ export default {
    :dialogVisible="dialogIsVisible"
    @close="closeDialog">
  </app-okdialog>
+ 
 SOURCE : https://stackoverflow.com/questions/44446559/vuetify-programmatically-showing-dialog?rq=1
