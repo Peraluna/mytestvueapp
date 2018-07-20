@@ -27,7 +27,7 @@ USAGE :
  first in main.js :
      import AppOkDialog from './components/AppOkDialog'
      Vue.component('app-okdialog', AppOkDialog)
-//
+
  in Parent Component (caller) :
 
 <script>
